@@ -4,10 +4,6 @@ const bodyParser = require('body-parser')
 var app = express()
 var jsonParser = bodyParser.json()
 
-var date = new Date()
-var hour = date.getHours()
-var last = hour
-
 global.metrics = {}
 
 // return summation of metric values for key
